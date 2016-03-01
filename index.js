@@ -11,9 +11,9 @@ if (!databaseUri) {
 }
 
 var api = new ParseServer({
-  databaseURI: databaseUri || 'mongodb://localhost:27017/dev',
+  databaseURI: databaseUri || 'mongodb://heroku_r8m0t0tp:l2imuh1dbrh8vb8na2qu7p53er@ds055885.mlab.com:55885/heroku_r8m0t0tp',
   cloud: process.env.CLOUD_CODE_MAIN || __dirname + '/cloud/main.js',
-  appId: process.env.APP_ID || 'myAppId',
+  appId: process.env.APP_ID || 'kweak-parse',
   masterKey: process.env.MASTER_KEY || '' //Add your master key here. Keep it secret!
 });
 // Client-keys like the javascript key or the .NET key are not necessary with parse-server
